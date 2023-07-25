@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --font-color-base: #C4C4CC;
+    --font-color-light: #FFF;
+    --font-color-title: #E1E1E6;
+    --font-color-content: #E1E1E6;
+    --button-border-color: #FFF;
+    --button-text-color: #FFF;
+    --button-hover-text-color: #02799D;
+    --button-hover-background-color: #FFF;
+}
+
+html {
+    background-image: url('./assets/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    height: 12.2rem;
+    padding: 4.0rem 0 4.0rem 7.2rem;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+nav a {
+    color: var(--font-color-base);
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.1rem;
+    text-decoration: none;
+    padding: 0 1.1rem;
+}
+
+nav a.selected {
+    color: var(--font-color-light);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.1rem;
+}
+
+.home, .error-404 {
+    display: flex;
+    justify-content: center;
+    margin-top: 17.2rem;
+}
+
+.explore, .universe {
+    margin-top: 6.3rem;
+    margin-left: 10.2rem;
+}
+
+.home-content {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--font-color-title);
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+p {
+    width: 64.8rem;
+    color: var(--font-color-content);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 1.6rem;
+}
+
+button {
+    display: inline-flex;
+    height: 4.8rem;
+    width: 19.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--button-border-color);
+    background: none;
+    color: var(--button-text-color);
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background 200ms;
+
+}
+
+button:hover {
+    background: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+}
